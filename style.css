@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #54c3ef;
+}
+
+.main-header {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 90px;
+    text-align: center;
+    color: #fad744;
+    text-shadow: 2px 5px #2b3252;
+    margin: 0;
+    padding-top: 32px;
+}
+
+.content{
+  text-align:center;
+  padding:4% 16%;
+}
+
+.player-section{
+	margin: auto;
+    width: 100%;
+    background-color: white;
+    border-radius: 6px;
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-wrapper{
+    width: 70%;
+    padding-right: 16px;
+    border-right: 1px solid #ccc;
+}
+
+.video-actions{
+	margin-bottom: 60px;
+}
+
+.video-actions p{
+	font-size: 24px;
+	margin: 16px 0 0 0;
+}
+
+.video-actions i{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-right: 20px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.views{
+	float: left;
+}
+
+.icons{
+	float: right;
+}
+
+.video-title{
+    font-size: 36px;
+    margin: 16px 0 16px 0;
+    border-top: 1px solid #ccc;
+    padding-top: 16px;
+    text-align: left;
+
+}
+
+
+.video-description {
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    margin-top: 0;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.playlist-wrapper{
+	width: 30%;
+	margin-left: 16px;
+}
+
+
+.playlist-card{
+	width: 100%;
+	border-radius: 6px;
+	border: 1px solid #ccc;
+	cursor: pointer;;
+	margin-bottom: 16px;
+	box-sizing: border-box;
+}
+
+.playlist-card h3{
+    margin: 10px 10px;
+    text-align: left;
+}
+
+.active-card{
+	border: 3px solid #fad744;
+}
+
+.thumbnail {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    cursor: pointer;
+}
