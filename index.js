@@ -1,12 +1,12 @@
 
-fetch('http://5d76bf96515d1a0014085cf9.mockapi.io/playlist')
+fetch('https://5d76bf96515d1a0014085cf9.mockapi.io/playlist')
 .then(res => {
   return res.json();
 })
 .then(data => {
   console.log(data);
   let wrapper = document.querySelector('.playlist-wrapper');
-  console.log(wrapper);
+  // console.log(wrapper);
   data.forEach(ele => {
     let div = document.createElement('div');
     div.className = 'playlist-card';
@@ -20,17 +20,20 @@ fetch('http://5d76bf96515d1a0014085cf9.mockapi.io/playlist')
     div.appendChild(h3);
     wrapper.appendChild(div);
   });
-  fetch('http://5d76bf96515d1a0014085cf9.mockapi.io/video')
+  fetch('https://5d76bf96515d1a0014085cf9.mockapi.io/video')
   .then(videos => {
     return videos.json();
   })
   .then(vids => {
     console.log(vids);
     vids.forEach(ele => {
-      img = document.getElementById(ele.id);
+      let img = document.getElementById(ele.id);
       let iframe = document.querySelector('iframe');
       img.addEventListener('click', (e) => {
         iframe.src = `https://player.vimeo.com/video/${ele.vimeoId}`;
+        document.querySelector('.views').textContent = ele.views;
+        document.querySelector('.video-title').textContent = ele.title;
+        document.querySelector('.video-description').textContent = ele.description;
       });
     });
   });
